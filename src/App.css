@@ -1,0 +1,180 @@
+.appHandle {
+  background-color: #4e545c;
+  width: 100%;
+  height: 100vh;
+  margin-top: -17px;
+}
+
+.HandleUser {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 1em;
+  margin-top: 4em;
+}
+
+.userprofile {
+
+  max-width: 100%;
+  clip-path: polygon(
+    20px 0,
+    calc(100% - 20px) 0,
+    100% 20px,
+    100% calc(100% - 20px),
+    calc(100% - 20px) 100%,
+    20px 100%,
+    0 calc(100% - 20px),
+    0 20px
+  );
+}
+
+#hiithere {
+  font-size: 55px;
+}
+div .rightside {
+  width: 45%;
+}
+.paragraph {
+  width: 80%;
+  margin-top: -30px;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 823px) {
+  .HandleUser {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+  }
+  div .rightside {
+    width: 80%;
+  }
+}
+
+.ploygone {
+  width: 40%;
+  margin: "1em auto";
+}
+
+.shape {
+  float: left;
+  shape-outside: polygon(
+    0px 0px,
+    0px 189px,
+    100.48% 94.71%,
+    200px 120px,
+    80.67% 37.17%
+  );
+  width: 200px;
+  height: 200px;
+}
+.shape > p {
+  color: aqua;
+}
+.cards {
+  width: 260px;
+  border: 1px solid gray;
+  margin:1em;
+  text-align: center;
+}
+
+.images {
+width: 250px;
+     border-radius: 130px 160px 90px 220px; 
+   
+}
+
+.details{
+  text-align: center;
+}
+
+.Handlecards{
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap:wrap;
+}
+
+.addtoCart{
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 0.5em;
+}
+.addtoCart{
+  width: 220px;
+  height: 50px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+}
+
+.addtoCart:before {
+  content: '';
+  background: linear-gradient(45deg, #ff0000, #ff7300,
+   #fffb00, #48ff00, #00ffd5, #002bff, 
+   #7a00ff, #ff00c8, #ff0000);
+  position: absolute;
+  top: -2px;
+  left:-2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
+}
+
+.addtoCart:active {
+  color: #000
+}
+
+.addtoCart:active:after {
+  background: transparent;
+}
+
+.addtoCart:hover:before {
+  opacity: 1;
+}
+
+.addtoCart:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes glowing {
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
+}
+
+.cardtitle{
+  text-align: center;
+}
+
+.about{
+  transition: all 2s;
+  content: ' ';
+
+}

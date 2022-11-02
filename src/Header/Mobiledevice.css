@@ -1,0 +1,23 @@
+@media screen and (min-width: 724px) {
+    .mobdevice{
+        display: none;
+        
+    }
+
+}
+@media screen and (max-width: 724px) {
+    .mobdevice{
+        background-color: #4e545c;
+        min-height: 10vh;
+        margin-top: -16px;
+    }
+
+}
+
+.dropbtnabout{
+    padding: 1em 1.3em;
+    text-align: left;
+    border: 1px solid gray;
+    width: 59px;
+    margin: .5em 4em;
+}
